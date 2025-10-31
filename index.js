@@ -489,7 +489,7 @@ function inject (bot) {
         fullStop()
 
         const digBlock = () => {
-          bot.dig(block, true)
+          bot.dig(block, false, false)
             .catch(_ignoreError => {
               resetPath('dig_error')
             })
